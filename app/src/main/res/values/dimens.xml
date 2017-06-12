@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="thumb">100dp</dimen>
+    <dimen name="normal">12sp</dimen>
+    <dimen name="mini">8sp</dimen>
+    <dimen name="mid">12dp</dimen>
+    <dimen name="play_box">40dp</dimen>
+    <dimen name="min">6dp</dimen>
+    <dimen name="nano">4dp</dimen>
+    <dimen name="nortext">16sp</dimen>
+    <dimen name="card_mar">5dp</dimen>
+    <dimen name="micro">2dp</dimen>
+    <dimen name="normal2">14sp</dimen>
+
+    <dimen name="title">18sp</dimen>
+    <dimen name="time">16sp</dimen>
+    <dimen name="desc">14sp</dimen>
+</resources>

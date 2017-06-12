@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/intro_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dummy"
+        android:scaleType="centerCrop"
+        android:background="@color/colorPrimary"/>
+
+<LinearLayout
+    android:paddingLeft="@dimen/mid"
+    android:paddingTop="@dimen/mid"
+    android:paddingBottom="@dimen/mid"
+    android:layout_alignParentBottom="true"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/player_bck">
+    <ImageView
+        android:layout_width="@dimen/play_box"
+        android:layout_height="@dimen/play_box"
+        android:src="@drawable/play"/>
+    <LinearLayout
+        android:layout_marginLeft="@dimen/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|bottom"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:textSize="@dimen/normal"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_title"/>
+        <TextView
+            android:textSize="@dimen/mini"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_artist"/>
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

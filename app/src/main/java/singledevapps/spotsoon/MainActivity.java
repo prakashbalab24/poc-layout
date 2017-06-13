@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity
         // Set a PageTransformer
         PageIndicatorView pageIndicatorView = (PageIndicatorView)findViewById(R.id.pageIndicatorView);
         pageIndicatorView.setViewPager(mViewPager);
-        pageIndicatorView.setSelectedColor(getResources().getColor(R.color.colorAccent));
+        pageIndicatorView.setSelectedColor(getResources().getColor(android.R.color.white));
         pageIndicatorView.setUnselectedColor(getResources().getColor(R.color.darkGrey));
     }
 

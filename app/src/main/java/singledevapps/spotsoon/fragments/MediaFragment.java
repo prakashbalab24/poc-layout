@@ -84,17 +84,17 @@ public class MediaFragment extends Fragment{
 
     private void setupTabIcons(int posi) {
 
-        tabOne.setText("Video");
+        tabOne.setText("VIDEOS");
         tabOne.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.video, 0, 0);
         tabOne.setTextColor(getResources().getColor(R.color.darkGrey));
         tabLayout.getTabAt(0).setCustomView(tabOne);
 
-        tabTwo.setText("Images");
+        tabTwo.setText("IMAGES");
         tabTwo.setTextColor(getResources().getColor(R.color.darkGrey));
         tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.image, 0, 0);
         tabLayout.getTabAt(1).setCustomView(tabTwo);
 
-        tabThree.setText("Milestone");
+        tabThree.setText("MILESTONE");
         tabThree.setTextColor(getResources().getColor(R.color.darkGrey));
         tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.milestone, 0, 0);
         tabLayout.getTabAt(2).setCustomView(tabThree);

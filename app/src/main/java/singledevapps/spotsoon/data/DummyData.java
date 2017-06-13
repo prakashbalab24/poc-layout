@@ -17,7 +17,7 @@ public class DummyData {
         MediaModel mediaModel;
         for (int i=0;i<=10;i++){
             int rand = GenralHelper.randomNum();
-            mediaModel = new MediaModel("Dummy "+i,"Uploaded "+i+ " hours ago","Description of the "+i+" video here.",thumbs[rand]);
+            mediaModel = new MediaModel("Dummy "+i,"Description of the "+i+" video here.","Uploaded "+i+ " hours ago",thumbs[rand]);
             mediaList.add(mediaModel);
         }
         adapter.notifyDataSetChanged();

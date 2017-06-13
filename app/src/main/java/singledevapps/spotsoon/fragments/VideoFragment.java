@@ -14,6 +14,7 @@ import java.util.List;
 
 import singledevapps.spotsoon.R;
 import singledevapps.spotsoon.adapter.MediaAdapter;
+import singledevapps.spotsoon.data.DummyData;
 import singledevapps.spotsoon.helper.GenralHelper;
 import singledevapps.spotsoon.model.MediaModel;
 
@@ -23,7 +24,6 @@ public class VideoFragment extends Fragment{
     private MediaAdapter adapter;
     private List<MediaModel> mediaList;
     private MediaModel model;
-    private int[] thumbs ={R.drawable.one,R.drawable.two,R.drawable.three};
 
     public VideoFragment() {
         // Required empty public constructor
@@ -49,19 +49,11 @@ public class VideoFragment extends Fragment{
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
 
-        loadDummyData();
+        DummyData.loadDummyData(mediaList,adapter);
         return rootView;
     }
 
-    private void loadDummyData(){
-        MediaModel mediaModel;
-        for (int i=0;i<=10;i++){
-            int rand = GenralHelper.randomNum();
-            mediaModel = new MediaModel("Dummy "+i,"Uploaded "+i+ " hours ago","Description of the "+i+" video here.",thumbs[rand]);
-            mediaList.add(mediaModel);
-        }
-        adapter.notifyDataSetChanged();
-    }
+
 
 
 
